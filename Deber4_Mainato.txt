@@ -1,0 +1,157 @@
+NODOS Y RELACIONES
+
+
+
+CREATE 
+  (`0` :`Compañero` {Lugar_conoce:"Francia ",Pasatiempos:"Leer libros",`Música`:"Rock",Juegos:"Video_uegos: Fornite",Nombre:"Paulina"}) ,
+  (`1` :Amigo {Lugar_conoce:"Disney",Pasatiempos:"Comer",`Música`:"Chicha",Juegos:"Makateta",Nombre:"juan"}) ,
+  (`2` :Amigo {Lugar_conoce:"Cucuta",Pasatiempos:"Dormir",`Música`:"Nacional",Juegos:"Days Gone",Nombre:"Rebeca"}) ,
+  (`3` :Amigo {Lugar_conoce:"Brasil",Pasatiempos:"Futbol",`Música`:"Samba",Juegos:"Futbol"}) ,
+  (`4` :Amigo {Lugar_conoce:"Quito",Pasatiempos:"Escuchar musica",`Música`:"Bals",Juegos:"ninguno",Nombre:"Kevin"}) ,
+  (`5` :`Compañero` {Lugar_conoce:"Babahollo",Pasatiempos:"Bailar",`Música`:"Regueton",Juegos:"Bascket",Nombre:"juan"}) ,
+  (`6` :`Compañero` {Lugar_conoce:"Machachi",Pasatiempos:"Leer libos",`Música`:"Rock",Juegos:" Fornite"}) ,
+  (`7` :`Compañero` {Lugar_conoce:"Calacali",Pasatiempos:"Facebook",`Música`:"Balada",Juegos:"Mortal Kombat",Nombre:"Enrique"}) ,
+  (`8` :`Compañero` {Lugar_conoce:"Patate",Pasatiempos:"Comer",`Música`:"Rap",Juegos:" Fornite",Nombre:"Luis"}) ,
+  (`9` :Amigo {Lugar_conoce:"Mexico",Pasatiempos:"Actuar",`Música`:"Rancheras",Juegos:"Malabares",Nombre:"Paul"}) ,
+  (`10` :Valentina {Lugar_conoce:"Latacunga",Pasatiempos:"Cantar",`Música`:"Vals",Juegos:"Pokemon",Nombre:"Enrique"}) ,
+  (`11` :Amigo {Lugar_conoce:"Cordoba",Pasatiempos:"Cantar",`Música`:"Cumbia",Juegos:"Futbol",Nombre:"Diego"}) ,
+  (`12` :Amigo {Lugar_conoce:"Disney",Pasatiempos:"Comer",`Música`:"Chicha",Juegos:"Makateta",Nombre:"pedro"}) ,
+  (`13` :Amigo {Lugar_conoce:"Ambato",Pasatiempos:"Cantar",`Música`:"Rock",Juegos:"Pokemon",Nombre:"Elias"}) ,
+  (`14` :`Compañero` {Lugar_conoce:"Bahia",Pasatiempos:"Cantar",`Música`:"Vals",Juegos:"Cartas",Nombre:"Omar"}) ,
+  (`15` :Amigo {Lugar_conoce:"Dinamarca",Pasatiempos:"Nadar",`Música`:"Clasica",Juegos:"Mario Bros",Nombre:"Paul"}) ,
+  (`16` :Node ) ,
+  (`17` :`Compañero` {Lugar_conoce:"Guamani",Pasatiempos:"Robar",`Música`:"Rap",Juegos:"Pokemon",Nombre:"Julian"}) ,
+  (`18` :Node ) ,
+  (`19` :Amigo {Lugar_conoce:"Latacunga",Pasatiempos:"Cantar",`Música`:"Vals",Juegos:"Pokemon",Nombre:"carlos"}) ,
+  (`20` :Amigo {Lugar_conoce:"Disney",Pasatiempos:"Comer",`Música`:"Chicha",Juegos:"Makateta",Nombre:"Paul"}) ,
+  (`21` :`Compañero` {Lugar_conoce:"Madagascar",Pasatiempos:"Cantar",`Música`:"Bolero",Juegos:"Canicas",Nombre:"Emiliano"}) ,
+  (`22` :Amigo {Lugar_conoce:"Uruguay",Pasatiempos:"Apostar",`Música`:"Christiana",Juegos:"Fifa 18",Nombre:"Kevin"}) ,
+  (`23` :`Compañero` {Lugar_conoce:"Francia ",Pasatiempos:"Leer libros",`Música`:"Rock",Juegos:"Video_uegos: Fornite",Nombre:"Omar"}) ,
+  (`24` :Amigo {Nombre:"Luis",Lugar_conoce:"Peru",Pasatiempos:"Reir",`Música`:"Chicha",Juegos:"Cartas"}) ,
+  (`25` :`Compañero` {Lugar_conoce:"Francia ",Pasatiempos:"Leer libros",`Música`:"Rock",Juegos:"Video_uegos: Fornite",Nombre:"Pedro"}) ,
+  (`26` :Amigo {Lugar_conoce:"Alpes",Pasatiempos:"Beber",`Música`:"Vals",Juegos:": Fornite",Nombre:"Marco"}) ,
+  (`27` :Amigo {Nombre:"Luis",Lugar_conoce:"Berlin",Pasatiempos:"Cantar",`Música`:"Rockola",Juegos:"Brujas"}) ,
+  (`28` :Amigo {Lugar_conoce:"Disney",Pasatiempos:"Comer",`Música`:"Chicha",Juegos:"Makateta",Nombre:"Marco"}) ,
+  (`29` :`Compañero` {Lugar_conoce:"Canada",Pasatiempos:"Cantar",`Música`:"Ranchera",Juegos:"Pokemon",Nombre:"Maria"}) ,
+  (`30` :`Compañero` {Lugar_conoce:"Sangolqui",Pasatiempos:"Cantar",`Música`:"Rock",Juegos:"Fifa19",Nombre:"Paulina"}) ,
+  (`0`)-[:`conoce` ]->(`1`),
+  (`1`)-[:`RELATED_TO` ]->(`2`),
+  (`1`)-[:`conoce` ]->(`3`),
+  (`2`)-[:`conoce` ]->(`4`),
+  (`3`)-[:`conoce` ]->(`5`),
+  (`5`)-[:`frecuentan` ]->(`6`),
+  (`6`)-[:`RELATED_TO` ]->(`3`),
+  (`0`)-[:`conoce` ]->(`7`),
+  (`6`)-[:`RELATED_TO` ]->(`8`),
+  (`3`)-[:`RELATED_TO` ]->(`9`),
+  (`7`)-[:`frecuentan` ]->(`5`),
+  (`0`)-[:`conoce` ]->(`10`),
+  (`7`)-[:`conoce` ]->(`11`),
+  (`11`)-[:`conoce` ]->(`12`),
+  (`12`)-[:`conoce` ]->(`13`),
+  (`7`)-[:`RELATED_TO` ]->(`12`),
+  (`12`)-[:`frecuentan` ]->(`14`),
+  (`10`)-[:`conoce` ]->(`4`),
+  (`10`)-[:`frecuentan` ]->(`15`),
+  (`9`)-[:`RELATED_TO` ]->(`16`),
+  (`16`)-[:`frecuentan` ]->(`17`),
+  (`17`)-[:`frecuentan` ]->(`18`),
+  (`17`)-[:`conoce` ]->(`19`),
+  (`4`)-[:`conoce` ]->(`20`),
+  (`3`)-[:`RELATED_TO` ]->(`21`),
+  (`21`)-[:`conoce` ]->(`22`),
+  (`22`)-[:`conoce` ]->(`17`),
+  (`22`)-[:`RELATED_TO` ]->(`23`),
+  (`22`)-[:`conoce` ]->(`24`),
+  (`24`)-[:`frecuentan` ]->(`6`),
+  (`8`)-[:`RELATED_TO` ]->(`25`),
+  (`25`)-[:`frecuentan` ]->(`26`),
+  (`8`)-[:`frecuentan` ]->(`27`),
+  (`27`)-[:`conoce` ]->(`28`),
+  (`15`)-[:`frecuentan` ]->(`29`),
+  (`20`)-[:`frecuentan` ]->(`30`)
+
+CONSULTAS
+
+
+
+1.-Muestra todos los amigos cuyos nombres empiezen con Lu
+
+MATCH (n:Amigo)
+WHERE n.Nombre STARTS WITH "Lu"
+RETURN n.Nombre
+
+2.-Muestra todos los compañeros cuyos nombres empiezen con Pa
+
+MATCH (n:Compañero)
+WHERE n.Nombre STARTS WITH "Pa"
+RETURN n.Nombre
+ 
+3.-Numero de compañeros que conocen a el amigo Luis
+
+MATCH (n:Amigo)-[r:conoce]->(c:Compañero)
+WHERE n.Nombre = "Luis" 
+RETURN count(r)
+
+
+4.-Muestra todos los amigos que conocen el lugar 
+que  empiezen con Qu
+
+MATCH (n:Amigo)
+WHERE n.Lugar_conoce STARTS WITH "Qu"
+RETURN n.Nombre
+
+
+5.-Muesrta a todos los amigos que conocen a  minimo 4 compañeros
+
+MATCH (n:amigo)-[r:conoce]->(c:Compañero)
+WITH n.Nombre AS Nombre,
+count(r) AS numero WHERE numero >= 4
+RETURN Nombre, numero
+
+6.-Muestra todos los Compañeros que tienen de pasatiempo apostar
+
+
+MATCH (c:Compañero)
+WHERE n.Pasatiempos STARTS WITH "Ap"
+RETURN n.Nombre
+
+7.-Numero de compañeros que conocen Quito
+
+MATCH (n:Amigo)-[r:conoce]->(c:Compañero)
+WHERE n.Lugar_conoce = "Quito" 
+RETURN count(r)
+
+
+8.-Numero de amigos que frecuentan a el compañero Juan
+
+MATCH (c:Compañero )-[f:frecuentan ]->(n:Amigo)
+WHERE n.Nombre = "Juan" 
+RETURN count(f)
+
+9.-Muestra todos los Compañeros que les gusta la musica ranchera
+
+
+MATCH (c:Compañero)
+WHERE n.Música STARTS WITH "Ra"
+RETURN n.Nombre
+
+
+10.- Muesrta a todos los amigos que conocen a  maximo 4 compañeros
+
+MATCH (n:amigo)-[r:conoce]->(c:Compañero)
+WITH n.Nombre AS Nombre,
+count(r) AS numero WHERE numero <= 4
+RETURN Nombre, numero
+
+
+
+
+
+
+
+
+
+
+
+
